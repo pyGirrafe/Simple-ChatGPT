@@ -2,7 +2,7 @@
 
 import React from "react";
 
-interface ResultButtonProps {
+interface IResultButtonProps {
     buttonName: string;
     width: number;
     textColor: string;
@@ -11,7 +11,7 @@ interface ResultButtonProps {
     handleSubmit: () => void;
 }
 
-const ResultButton: React.FC<ResultButtonProps> = (props) => {
+const ResultButton: React.FC<IResultButtonProps> = (props) => {
     const handleClick = () => {
         props.changeMessages();
         props.handleSubmit();

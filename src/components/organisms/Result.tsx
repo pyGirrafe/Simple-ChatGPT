@@ -4,11 +4,11 @@ import React, { useState } from "react"
 import UserQuestion from "../molecules/UserQuestion"
 import BotResponse from "../molecules/BotResponse"
 
-interface ResultProps {
+interface IResultProps {
     userText: string;
     botText: string;
 }
-const Result: React.FC<ResultProps> = (props) => {
+const Result: React.FC<IResultProps> = (props) => {
 
     return (
         <div className="w-full">

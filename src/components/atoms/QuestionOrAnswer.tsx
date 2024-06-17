@@ -2,11 +2,11 @@
 
 import React from "react";
 
-interface QuestionOrAnswerProps {
+interface IQuestionOrAnswerProps {
     text: string;
 }
 
-const QuestionOrAnswer: React.FC<QuestionOrAnswerProps> = (props) => {
+const QuestionOrAnswer: React.FC<IQuestionOrAnswerProps> = (props) => {
     return <div>{props.text}</div>;
 };
 

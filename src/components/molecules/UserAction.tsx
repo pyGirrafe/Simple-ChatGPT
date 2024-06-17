@@ -5,13 +5,13 @@ import Title from "../atoms/Title"
 import ResultButton from "../atoms/ResultButton"
 import QuestionInput from "../atoms/QuestionInput"
 
-interface UserActionProps {
+interface IUserActionProps {
     changeUserMessage: (userMessage: string) => void;
     changeMessages: () => void;
     handleSubmit: () => void;
 }
 
-const UserAction: React.FC<UserActionProps> = (props) => {
+const UserAction: React.FC<IUserActionProps> = (props) => {
     return (
         <div>
             <div>

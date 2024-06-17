@@ -4,10 +4,10 @@ import React from "react"
 import Avatar from "../atoms/Avatar";
 import QuestionOrAnswer from "../atoms/QuestionOrAnswer";
 
-interface BotResponseProps {
+interface IBotResponseProps {
     botText: string;
 }
-const BotResponse: React.FC<BotResponseProps> = (props) => {
+const BotResponse: React.FC<IBotResponseProps> = (props) => {
     return (
         <div className="flex justify-end gap-4 items-start p-4 mb-2 rounded-md">
             <span className="w-[70%] flex justify-end">

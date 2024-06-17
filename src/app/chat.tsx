@@ -4,14 +4,14 @@ import React, { useState, useRef, useEffect } from "react";
 import UserAction from "@/components/molecules/UserAction";
 import Result from "@/components/organisms/Result";
 
-interface Message {
+interface IMessage {
     user: string;
     bot: string;
 }
 
 const Chatting: React.FC = () => {
     const [userMessage, setUserMessage] = useState<string>('');
-    const [messages, setMessages] = useState<Message[]>([]);
+    const [messages, setMessages] = useState<IMessage[]>([]);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     const scrollToBottom = () => {

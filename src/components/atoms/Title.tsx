@@ -2,13 +2,13 @@
 
 import React from "react";
 
-interface TItleProps {
+interface ITItleProps {
     textColor: string;
     textSize: number;
     title: string;
 }
 
-const TItle: React.FC<TItleProps> = (props) => {
+const TItle: React.FC<ITItleProps> = (props) => {
     return (
         <div
             style={{ color: `${props.textColor}`, fontSize: `${props.textSize}px` }}

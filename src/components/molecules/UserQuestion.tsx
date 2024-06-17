@@ -4,10 +4,10 @@ import React from "react"
 import Avatar from "../atoms/Avatar";
 import QuestionOrAnswer from "../atoms/QuestionOrAnswer";
 
-interface UserQuestionProps {
+interface IUserQuestionProps {
     userText: string;
 }
-const UserQuestion: React.FC<UserQuestionProps> = (props) => {
+const UserQuestion: React.FC<IUserQuestionProps> = (props) => {
     return (
         <div className="flex justify-start gap-4 items-start rounded-md p-4 mb-2">
             <span className="w-[5%]">

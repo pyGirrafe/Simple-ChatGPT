@@ -2,14 +2,14 @@
 
 import React, { ChangeEvent, useState, KeyboardEvent } from "react";
 
-interface QuestionInputProps {
+interface IQuestionInputProps {
     width: number;
     changeUserMessage: (messages: string) => void;
     changeMessages: () => void;
     handleSubmit: () => void;
 }
 
-const QuestionInput: React.FC<QuestionInputProps> = (props) => {
+const QuestionInput: React.FC<IQuestionInputProps> = (props) => {
     const [inputValue, setInputValue] = useState('');
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
