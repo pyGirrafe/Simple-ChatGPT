@@ -5,7 +5,6 @@ import React from "react";
 interface ResultButtonProps {
     buttonName: string;
     width: number;
-    height: number;
     textColor: string;
     backgroundColor: string;
     changeMessages: () => void;
@@ -22,8 +21,7 @@ const ResultButton: React.FC<ResultButtonProps> = (props) => {
         <button
             onClick={handleClick}
             style={{ 
-                width: `${props.width}px`, 
-                height: `${props.height}px`,
+                padding: '10px',
                 backgroundColor: props.backgroundColor,
                 border: 'none',
                 borderRadius: '4px',

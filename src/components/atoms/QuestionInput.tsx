@@ -4,7 +4,6 @@ import React, { ChangeEvent, useState, KeyboardEvent } from "react";
 
 interface QuestionInputProps {
     width: number;
-    height: number;
     changeUserMessage: (messages: string) => void;
     changeMessages: () => void;
     handleSubmit: () => void;
@@ -33,7 +32,7 @@ const QuestionInput: React.FC<QuestionInputProps> = (props) => {
             value={inputValue}
             onChange={handleChange}
             onKeyDown={handleKeyDown}
-            style={{ width: `${props.width}px`, height: `${props.height}px` }}
+            style={{ width: `${props.width}px`, padding: '10px' }}
             className="border px-2"
         />
     );

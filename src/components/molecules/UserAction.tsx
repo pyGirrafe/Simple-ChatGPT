@@ -25,7 +25,6 @@ const UserAction: React.FC<UserActionProps> = (props) => {
                 <span>
                     <QuestionInput
                         width={500}
-                        height={50}
                         changeUserMessage={props.changeUserMessage}
                         changeMessages={props.changeMessages}
                         handleSubmit={props.handleSubmit}
@@ -35,7 +34,6 @@ const UserAction: React.FC<UserActionProps> = (props) => {
                     <ResultButton
                         buttonName="Result"
                         width={100}
-                        height={50}
                         textColor="#fff"
                         backgroundColor="#374234"
                         changeMessages={props.changeMessages}
