@@ -61,7 +61,7 @@ const Chatting: React.FC = () => {
                 handleSubmit={handleSubmit}
             />
             <div className="w-[1000px] p-5 h-[55vh] overflow-y-auto">
-                {messages.map((message: Message, index: number) => (
+                {messages.map((message: IMessage, index: number) => (
                     <Result
                         key={index}
                         userText={message.user}
